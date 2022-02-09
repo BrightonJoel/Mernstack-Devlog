@@ -1,0 +1,24 @@
+https://sqliteonline.com/
+
+CREATE TABLE products(
+id INT NOT NULL,
+name STRING,
+price MONEY,
+PRIMARY KEY (id)
+);
+
+INSERT INTO products
+VALUES (1, "Pen", 1.20);
+
+INSERT INTO products(id, name)
+VALUES(1, "Pencil");
+
+CREATE TABLE orders(
+id INT NOT NULL,
+order_number INT,
+customer_id INT,
+product_id INT,
+PRIMARY KEY (id),
+FOREIGN KEY (customer_id) REFERENCES customer(id),
+FOREIGN KEY (product_id) REFERENCES products(id)
+)

@@ -1,0 +1,83 @@
+C:\Program Files\MongoDB\Server\4.4\data\
+
+use <dataname>
+
+show dbs
+
+db -> see the current database
+
+collection === table in sql
+
+
+db.products.insertOne({_id: 1, name: "pen", price: 1.20})
+{ "acknowledged" : true, "insertedId" : 1 }
+
+
+show collections
+products
+
+
+> db.products.find()
+{ "_id" : 1, "name" : "pen", "price" : 1.2 }
+{ "_id" : 2, "name" : "Pencil", "price" : 0.8 }
+
+
+db.products.find({name:'Pencil'})
+{ "_id" : 2, "name" : "Pencil", "price" : 0.8 }
+
+
+db.products.find({price: {$gt: 1}})
+{ "_id" : 1, "name" : "pen", "price" : 1.2 }
+
+
+db.products.find({_id:1}, {name: 1, _id:0})
+{ "name" : "pen" }
+
+
+db.products.updateOne({_id: 1}, {$set: {stock: 32}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+
+
+db.products.deleteOne({_id: 2});
+{ "acknowledged" : true, "deletedCount" : 1 }
+
+
+db.products.insert(
+{
+_id: 3,
+name: "Rubber",
+price: 1.30,
+stock: 43,
+reviews: [
+{
+authorName: "Sally",
+rating: 5,
+review: "Best rubber ever!"
+},
+{
+authorName: "John",
+rating: 5,
+review: "Awesome Rubber"
+}
+]
+}
+)
+
+db.products.insertOne({
+ _id: 2,
+ name: "Pencil",
+ price: 0.80,
+ stock: 12,
+ review: [
+ {
+ authorName : "james",
+ rating: 5,
+ review: "Fantastic"
+ },
+{
+ authorName: "Jono",
+ rating: 5,
+ review: "The best pencil I've used in my life."
+ }
+ ]
+})

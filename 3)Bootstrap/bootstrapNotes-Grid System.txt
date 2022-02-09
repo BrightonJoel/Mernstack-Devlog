@@ -1,0 +1,35 @@
+Grid system demo
+
+
+<div class="row">
+    <div class="col" style="background-color : red; border: solid 1px;"> col </div>
+    <div class="col" style="background-color : red; border: solid 1px;"> col </div>
+</div>
+<div class="row">
+    <div class="col-6" style="background-color : green; border: solid 1px;"> col-6 </div>
+    <div class="col-6" style="background-color : green; border: solid 1px;"> col-6 </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" style="background-color : yellow; border: solid 1px;"> col-lg-3 col-md-4 col-sm-6 </div>
+</div>
+
+<div class="row">
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+    <div class="col-lg-2 col-md-3 " style="background-color : grey; border: solid 1px;"> col-lg-2 col-md-3</div>
+
+</div>

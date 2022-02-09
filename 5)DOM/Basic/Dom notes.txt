@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My website</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body onload="alert('Hello')">
+    <h1>Hello</h1>
+    <script type="text/javascript">
+      alert("World");
+    </script>
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
+
+document.querySelector("ul").lastElementChild.innerHTML="Brighton you have done it!";
+
+document.querySelector("h1").innerHTML="Brighton you have done it!";
+
+document.getElementsByTagName[2]("li");
+document.getElementsByClassName("Class");
+document.getElementsId("idName");
+
+document.querySelectorAll("li")[2];
+document.querySelectorAll("li.list")[1].style = "color:red";
+
+document.querySelector("button").style.backgroundColor="yellow";
+
+
+document.querySelector("button").classList.add("invisible");
+undefined
+document.querySelector("button").classList.remove("invisible");
+undefined
+document.querySelector("button").classList.toggle("invisible");
+true
+document.querySelector("button").classList.toggle("invisible");
+false
+
+document.querySelector("h1").innerHTML;
+document.querySelector("h1").textContent;
+
+
+document.querySelector("a").attributes;
+document.querySelector("a").getattributes("href");
+document.querySelector("a").setattributes("href","www.bing.com");

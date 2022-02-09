@@ -1,0 +1,22 @@
+Api - Application program Interface
+endpoints
+paths
+parameters
+authentication
+
+
+Kanya west random quote api   Kanye.rest
+Jokes api : https://sv443.net/jokeapi/v2/ (Any Kind of Joke)
+The below link is example for a Api link with multiple quires
+https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,sexist,explicit&type=single
+
+
+JSON : JavaScript Object Notations
+
+httpstatusdogs
+
+git init
+git add .
+git commit -m "First commit"
+heroku create
+git push heroku master
