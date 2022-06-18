@@ -1,0 +1,368 @@
+********************************************************************************
+Console:
+********************************************************************************
+alert("Hello");
+undefined
+alert("World");
+undefined
+alert("Hello");
+alert("World");
+undefined
+
+Press shift for multiline.
+
+Sources:
+alert("Hello");
+alert("World");
+alert("You are fat");
+window.alert("You are very fat");
+
+********************************************************************************
+JavaScript Data types:
+********************************************************************************
+
+String : "" or ''
+>2+3
+5
+
+>2*3
+6
+
+>alert(2+3);
+undefined
+
+>typeof("");
+"string"
+
+>typeof(344358)
+"number"
+
+>typeof(3.55)
+"number"
+
+********************************************************************************
+JavaScript Variables:
+********************************************************************************
+
+var myName = "Brighton";
+var yourName = prompt("What is your Name ?");
+
+alert("I am " + myName + ". Welcome " + yourName);
+
+var gameLevel = 1;
+gameLevel = 2;
+gameLevel = 3;
+alert(gameLevel)
+
+function test() {
+    var a = "3";
+    var b = "8";
+
+/***********Do not change the code above 👆*******/
+//Write your code on lines 7 - 9:
+[a,b] = [b,a];
+/***********Do not change the code below 👇*******/
+
+    console.log("a is " + a);
+    console.log("b is " + b);
+}
+
+var abc123$_ = "This is allowed";
+
+Length of String:
+
+var myName = "Brighton";
+myName.length;
+
+var tweet = prompt("Type your tweet")
+var tweetLen = 180 - tweet.length;
+
+alert("You have " + (tweetLen) + " charaters left out 180.");
+
+********************************************************************************
+slicing:
+********************************************************************************
+
+var myName = "Brighton";
+myName.slice(0,1);
+
+var tweet = prompt("Type your tweet")
+tweet.length;
+tweet = tweet.slice(0,180);
+tweet.length;
+alert(tweet);
+
+Changing the Case of a string
+myName = "Brighton";
+myName.toUpperCase();
+myName.toLowerCase();
+
+var yourName = prompt("Enter your name");
+yourName = yourName.slice(0,1).toUpperCase() + yourName.slice(1,).toLowerCase();
+alert("Your name is "+ yourName);
+
+********************************************************************************
+Arithmetic Operations:
+********************************************************************************
+
+var dogAge = prompt("Enter your dog's age:");
+humanAge =((dogAge -2) * 4 ) + 21;
+alert("Your dog's human equivalent age is : "+ humanAge);
+
+********************************************************************************
+Increment and decrement works same as in C , C++ , java;
+********************************************************************************
+
+********************************************************************************
+Fuctions in JavaScript:
+********************************************************************************
+
+function getMilk(){
+    console.log("leaveHouse");
+    console.log("Move Up");
+    console.log("Move Up");
+    console.log("Move Up");
+    console.log("Move Up");
+    console.log("Move down");
+    console.log("Move down");
+    console.log("Move down");
+    console.log("Move down");
+}
+
+getMilk();
+
+
+Karel Bot code:
+
+/**
+ * Welcome to the Stanford Karel IDE.
+ * This is a free space for you to
+ * write any Karel program you want.
+ **/
+function main(){
+   //your code here
+
+   //layBeeperInDiag();
+   //goToConcern();
+   createAChessBoard();
+}
+
+function goToConcern(){
+   move();
+   move();
+   move();
+   move();
+   turnLeft();
+   move();
+   move();
+   move();
+   move();
+   turnLeft();
+}
+
+function layBeeperInDiag(){
+   putBeeper();
+   moveIndiag();
+   moveIndiag();
+   moveIndiag();
+   moveIndiag();
+}
+
+function moveIndiag(){
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+   turnRight();
+}
+
+function createAChessBoard(){
+    putBeeper();
+
+    moveAndLayBeeper();
+    moveAndLayBeeper();
+    rightSide();
+
+    moveAndLayBeeper();
+    leftSide();
+
+    moveAndLayBeeper();
+    moveAndLayBeeper();
+    rightSide();
+
+    moveAndLayBeeper();
+    leftSide();
+
+    moveAndLayBeeper();
+    moveAndLayBeeper();
+}
+
+function moveAndLayBeeper(){
+   move();
+   move();
+   putBeeper();
+}
+
+function rightSide(){
+   turnLeft();
+   move();
+   turnLeft();
+   move();
+   putBeeper();
+}
+
+function leftSide(){
+   move();
+   turnRight();
+   move();
+   turnRight();
+   putBeeper();
+}
+
+********************************************************************************
+function with args
+********************************************************************************
+function getMilk(money) {
+  var bottles = Math.floor(money / 1.5);
+  console.log("leaveHouse");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveUp");
+  console.log("moveRight");
+  console.log("moveRight");
+  console.log("buy "+bottles+" bottles of milk");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveDown");
+  console.log("moveLeft");
+  console.log("moveLeft");
+  console.log("enterHouse");
+  return money % 1.5;
+}
+var change = getMilk(100);
+
+
+Math.pow(base, expo); // to do this "^"
+Math.round();
+Math.floor();
+Math.random();
+
+********************************************************************************
+Love Calculator
+********************************************************************************
+randomNumber = Math.floor(Math.random() * 100) + 1;
+prompt("Enter your name:");
+prompt("Enter your wife's number:");
+alert("Chance of success is "+ randomNumber +"%");
+
+********************************************************************************
+Conditional Statements
+********************************************************************************
+
+randomNumber = Math.floor(Math.random() * 100) + 1;
+prompt("Enter your name:");
+prompt("Enter your wife's number:");
+
+if(randomNumber === 100){
+ alert("Your love is very fat!!. Chance of success is "+ randomNumber +"%");
+}else if(randomNumber > 75 ){
+ alert("Your love is fat!. Chance of success is "+ randomNumber +"%");
+}else{
+alert("Chance of success is "+ randomNumber +"%");
+}
+
+Comparators:
+===   is equal to
+!==   is not equal to
+==    is equal to /across datatypes
+=!    is equal to /across datatypes
+
+Logical combinators:
+&&    AND
+||    OR
+!     NOT
+
+Leap year Program :
+function isLeap(year) {
+if( year%400 === 0 ||(year%4 === 0 && year%100 !== 0)){
+    return "Leap year.";
+}else{
+    return "Not leap year.";
+}
+
+}
+********************************************************************************
+Arrays:
+********************************************************************************
+var guestList = ["Angela", "Brighton" ,"Jake", "Jude", "Mat" , "Luke" ];
+var Name = prompt("Enter your Name:");
+
+if (guestList.includes(Name)){
+  console.log("Welcome to the Party");
+}else{
+  console.log("Get lost Fatty!! 😛😛");
+}
+
+********************************************************************************
+Looping Statements
+********************************************************************************
+for(var i=1; i<=100; i++){
+  if(i%3 === 0){
+    console.log("Fizz");
+    continue;
+  }
+  if(i%5 === 0){
+    console.log("Buzz");
+    continue;
+  }
+  console.log(i)
+}
+
+Arrays.push();// This function allows us to add new items in the arrays.
+
+
+partyLunchRandom:
+
+function whosPaying(names) {
+
+var randomNumber = Math.floor(Math.random() * names.length);
+return names[randomNumber] + " is going to buy lunch today!";
+
+}
+
+console.log(whosPaying(['a','b','csehfsu','d']));
+
+Fibonacci series:
+
+function fibonacciGenerator (n) {
+//Do NOT change any of the code above 👆
+
+    //Write your code here:
+var a = 0;
+var b = 1;
+var c = 0;
+var list = [];
+
+for(var i=1; i <= n ;i++){
+    if (i===1){
+        list.push(a);
+    }else if(i==2){
+        list.push(b);
+    }else{
+        c = a+b;
+        a = b;
+        b = c;
+        list.push(c);
+    }
+}
+return list;
+    //Return an array of fibonacci numbers starting from 0.
+
+//Do NOT change any of the code below 👇
+}

@@ -1,0 +1,14 @@
+var houseKeeper = {
+    name: "fatty",
+    age:100,
+    hasWorkPermit:true}
+
+undefined
+
+//constructor function
+function HouseKeeper(name){
+    this.name = name
+}
+undefined
+new HouseKeeper("fatty")
+HouseKeeper {name: "fatty"}

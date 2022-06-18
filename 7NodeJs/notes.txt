@@ -1,0 +1,6 @@
+npm install express
+npm i pstree.remy@1.1.0 -D
+
+npm install -g nodemon
+
+npm install body-parser

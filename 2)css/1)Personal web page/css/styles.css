@@ -1,0 +1,17 @@
+body{
+  background: #f7f7e8;
+}
+hr{
+  border-style: none;
+  border-top-style: solid;
+  border-color: #9dad7f;
+  border-width: 3px;
+ }
+h1{
+  font-family: Times new roman;
+  color: #557174;
+}
+h3{
+  font-family: Times new roman;
+  color: #557174;
+}

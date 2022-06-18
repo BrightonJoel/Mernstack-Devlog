@@ -1,0 +1,23 @@
+// CHEECING THE HYPERTERMINAL
+echo $SHELL
+
+BASH   =Bourne Again Shell
+ hackertyper.com
+ cd
+ ls
+ mkdir
+ cd ..
+ alt + click
+ ctrl + a begin
+ ctrl + e endline
+ ctrl + u clear
+
+ touch <newFile>
+ open <fileName>
+ open -a atom <fileName>
+ rm <delFile>
+ pwd - print working directory
+ rm * - remove everything
+ rm -r dir/
+ sudo - super user do
+ sudo rm -rf --no-preserve-root/ 

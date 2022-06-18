@@ -1,0 +1,26 @@
+/*******************************************TAG SELECTORS*******************************************/
+h1 {
+  color: #c05555;
+  font-size: 200px;
+}
+
+img:hover{
+  background-color: #fff8c1;
+}
+
+/*******************************************CLASS SELECTORS*******************************************/
+.bacon {
+  background-color: #c05555;
+}
+
+.broccoli {
+  background-color: #59886b;
+}
+
+.circular{
+  border-radius: 100%;
+}
+/*******************************************CLASS SELECTORS*******************************************/
+#heading {
+  color: #ffc85c;
+}

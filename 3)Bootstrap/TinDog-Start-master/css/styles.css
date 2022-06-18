@@ -1,0 +1,213 @@
+
+body {
+  font-family: 'Montserrat';
+}
+h1,h2,h3,h4 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+.container-fluid {
+  padding: 7% 15%;
+}
+
+/* title*/
+#title {
+  background-color: #184d47;
+  color:#fad586;
+}
+#title .container-fluid{
+  padding: 3% 15% 7%
+}
+.title-image {
+  width: 60%;
+  transform: rotate(25deg);
+  padding: 20px;
+  position:absolute;
+  right: 30%;
+}
+.title-h1 {
+  font-size:3rem;
+  line-height: 1.5;
+}
+/* navbar */
+.navbar {
+  padding: 0 0 4.5rem 0;
+}
+
+.navbar-brand{
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: "Ubuntu";
+}
+
+.navbar-dark .navbar-brand{
+  color: #fad586;
+}
+.navbar-dark .navbar-brand:hover {
+  color: #d6efc7;
+}
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-family: "Montserrat";
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+/* Download button */
+.download-button {
+  margin: 5% 3% 5% 0;
+  color: #fad586;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+.android-button:hover{
+  background-color: #fad586;
+  border-color: #fad586;
+  color: #96bb7c;
+}
+.android-button{
+  border-color: #fad586;
+}
+.ios-button {
+  background-color:#96bb7c;
+  border-color: #96bb7c;
+}
+.ios-button:hover{
+  color: #96bb7c;
+  background-color: transparent;
+  border-color: #96bb7c;
+}
+
+
+/*feature*/
+#features {
+  background-color: #fad586;
+  position: relative;
+  padding: 2% 10% 4%;
+}
+#feature .container-fluid{
+  padding: 3% 15% 7%
+}
+.font-awesome {
+  color: #184d47;
+  font-size: 3rem;
+  padding: 5px;
+}
+
+.font-awesome:hover {
+  color: #96bb7c;
+}
+
+.featureh3 {
+  font-size: 1.4rem;
+  color: #184d47;
+}
+
+.featureDivCenter {
+  text-align: center;
+  padding: 5%;
+}
+.featureParagraph {
+  font-size: 0.9rem;
+  color: #184d47;
+  font-weight: 500;
+}
+.featurefluid {
+  padding: 0;
+}
+
+/* testimonial */
+
+#testimonials {
+  background-color: #96bb7c;
+  text-align: center;
+  color: #d6efc7;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.testimonial-text{
+  color: #d6efc7;
+  line-height: 1.5;
+  font-size: 3rem
+}
+
+.testimonialImages {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+
+}
+/* press section */
+
+#press {
+  background-color: #96bb7c;
+  text-align: center;
+  margin: 0;
+  padding-bottom: 3%;
+}
+
+.pressImages {
+  width: 15%;
+  margin: 20px 20px 50px;
+}
+
+/* pricing */
+
+#pricing {
+  padding: 100px;
+  background-color: #d6efc7;
+  color: #184d47;
+}
+
+.card-header {
+  background-color: #fad586;
+  border-radius: 100%;
+}
+
+.card-body {
+  background-color: #96bb7c;
+  border-radius: 100%;
+}
+
+.card {
+  background-color: #96bb7c;
+}
+.borderRadius {
+  padding: 3% 2%;
+}
+
+/* CTA */
+#cta {
+  text-align: center;
+  background-color: #184d47;
+  color: #fad586;
+}
+
+.Ctah3 {
+  font-size: 3rem;
+}
+
+/* footer */
+#footer {
+  padding: 3% 15% 10px ;
+  color: #184d47;
+  background-color: #fad586;
+  text-align: center;
+}
+.icon{
+  padding: 10px;
+}
+
+@media (max-width: 1080px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+  }
+
+}

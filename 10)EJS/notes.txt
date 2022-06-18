@@ -1,0 +1,5 @@
+Ejs Stands for emedded JavaScrpit Templates.
+
+npm i ejs
+
+
